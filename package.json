@@ -1,0 +1,15 @@
+{
+  "name": "lesss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "less": "lessc ./src/main.less ./biuld/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "less": "^4.2.2"
+  }
+}
