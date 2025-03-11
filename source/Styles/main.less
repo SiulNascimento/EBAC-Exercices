@@ -1,0 +1,67 @@
+@mainfont: Roboto, sans-serif;
+@secondfont: Lobster, cursive;
+@colortext: #ffff;
+@backgroundcolor: #eb3b5a;
+@buttonbackground: #f7b731;
+@buttoncolortext: #000;
+
+
+body {
+    background-color: @backgroundcolor;
+    font-family: @mainfont;
+    color: @colortext;
+}
+
+h1 {
+    font-family: @secondfont;
+    font-size: 3em;
+}
+
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    label {
+        display: block;
+    }
+    input {
+        margin: 16px auto 0;
+        font-size: 2em;
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        max-width: 120px;
+        color: #fff;
+        border-bottom: 6px solid #fff;
+    }
+
+    button {
+        padding: 16px;
+        cursor: pointer;
+        border-radius: 8px;
+        font-weight: bold;
+        font-family: 1.3em;
+        margin-top: 16px;
+        background-color: @buttonbackground;
+        color: @buttoncolortext;
+        font-family: @mainfont;
+    }
+    .result {
+        padding:16px;
+        margin-top: 120px;
+        border: 8px dotted #fff;
+        display: none;
+
+        span {
+            font-weight:bold;
+            font-size: 3em;
+            display: block;
+        }
+    }
+
+}
